@@ -73,7 +73,7 @@ function SmartCal() {
   const [weightUnit, setWeightUnit] = useState<WeightUnit>("kg");
   const [weight, setWeight] = useState("");
   const [activityId, setActivityId] = useState<string | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<Partial<Record<"age" | "sex" | "height" | "weight" | "activity", string>>>({});
   const [result, setResult] = useState<Result | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
@@ -112,7 +112,7 @@ function SmartCal() {
   }
 
   function validate(): boolean {
-    const e: Record<string, string> = {};
+    const e: Partial<Record<"age" | "sex" | "height" | "weight" | "activity", string>> = {};
     const ageN = Number(age);
     if (age === "" || Number.isNaN(ageN)) e.age = "Please enter your age.";
     else if (!Number.isInteger(ageN) || ageN < RANGES.age.min || ageN > RANGES.age.max)
