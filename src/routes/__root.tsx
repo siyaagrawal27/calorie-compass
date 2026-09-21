@@ -77,16 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "SmartCal — Daily Calorie & Energy Needs Calculator" },
+      { name: "description", content: "Estimate your BMR and daily calorie needs in under two minutes. Client-side, transparent formulas, metric or imperial units." },
+      { name: "author", content: "SmartCal" },
+      { property: "og:title", content: "SmartCal — Daily Calorie & Energy Needs Calculator" },
+      { property: "og:description", content: "Estimate your BMR and daily calorie needs in under two minutes. Transparent formulas, metric or imperial units." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700;800&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
