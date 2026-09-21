@@ -79,13 +79,13 @@
   --secondary: var(--brand-soft);
   --secondary-foreground: var(--ink);
   --muted: var(--butter-soft);
-  --muted-foreground: var(--ink / 0.6);
+  --muted-foreground: color-mix(in oklab, var(--ink) 60%, transparent);
   --accent: var(--mint-soft);
   --accent-foreground: var(--ink);
   --destructive: oklch(0.63 0.21 27);
   --destructive-foreground: oklch(1 0 0);
-  --border: var(--ink / 0.1);
-  --input: var(--ink / 0.12);
+  --border: color-mix(in oklab, var(--ink) 10%, transparent);
+  --input: color-mix(in oklab, var(--ink) 12%, transparent);
   --ring: var(--brand);
 }
 
