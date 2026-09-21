@@ -1,24 +1,68 @@
-# Calorie Compass
+# 🥗 SmartCal — Calorie & Daily Energy Calculator
 
-i want to create a project which is basically a website which calculates calories and this is the prd and this is the basic inspo https://www.calories.info/calorie-intake-calculator
+SmartCal is a modern web application that estimates daily calorie and energy requirements using information such as age, sex, height, weight, and activity level.
 
-This project was built with [Lovable](https://lovable.dev).
+The project was created as an AI-assisted Vibe Coding project using Lovable and is deployed with Vercel.
 
-## Build with Lovable
+## 🌐 Live Demo
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/8b7793d5-9a45-4ad7-959b-d87656c72f52).
+🚀 **Live Website:**  
+https://calorie-compass-alpha.vercel.app/
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+📦 **GitHub Repository:**  
+https://github.com/siyaagrawal27/calorie-compass
 
-## Development
+## ✨ Features
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- 🔢 Daily calorie intake estimation
+- 🧮 BMR calculation
+- ⚡ TDEE estimation
+- 👤 User information input
+- 📏 Metric and imperial units
+- 🏃 Activity-level selection
+- 🍎 Food and calorie tracking
+- 📊 Daily calorie summary
+- 📱 Responsive user interface
+- 🎨 Clean and modern design
+- ⚠️ Informational-use disclaimer
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## 🧠 How It Works
+
+SmartCal follows this basic calculation flow:
+
+User Information  
+↓  
+Age + Sex + Height + Weight  
+↓  
+BMR Calculation  
+↓  
+Activity Level  
+↓  
+TDEE Estimation  
+↓  
+Daily Calorie Estimate
+
+The application presents the results in a simple and understandable interface.
+
+## 🛠️ Tech Stack
+
+- **React** — Frontend
+- **TypeScript** — Programming language
+- **Vite** — Build tool
+- **Tailwind CSS** — Styling
+- **Lovable** — AI-assisted development
+- **GitHub** — Version control
+- **Vercel** — Deployment
+
+## 📂 Project Structure
+
+```text
+calorie-compass/
+├── .lovable/
+├── public/
+├── src/
+├── .gitignore
+├── README.md
+├── AGENTS.md
+├── package.json
+└── vite.config.*
